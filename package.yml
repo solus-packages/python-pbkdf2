@@ -1,6 +1,6 @@
 name       : python-pbkdf2
 version    : 1.3
-release    : 1
+release    : 2
 source     :
     - https://pypi.python.org/packages/02/c0/6a2376ae81beb82eda645a091684c0b0becb86b972def7849ea9066e3d5e/pbkdf2-1.3.tar.gz : ac6397369f128212c43064a2b4878038dab78dab41875364554aaf2a684e6979
 license    : MIT
@@ -9,9 +9,8 @@ summary    : This module implements the password-based key derivation function, 
 description: |
     This module implements the password-based key derivation function, PBKDF2, specified in RSA PKCS#5 v2.0.
 builddeps  :
-    - pkgconfig(python-2.7)
-    - python-setuptools
+    - pkgconfig(python-3.5)
 build      : |
-    %python_setup
+    %python3_setup
 install    : |
-    %python_install
+    %python3_install
